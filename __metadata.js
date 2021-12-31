@@ -1,4 +1,4 @@
-export const name = "Tauri";
+export const name = "(work in progress) Tauri";
 
 /** @typedef {{}} Options */
 
