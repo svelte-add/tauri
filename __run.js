@@ -10,6 +10,9 @@ export const run = async ({ folderInfo, install, runCommand, updateJson }) => {
 	// TODO: extract build directory from vite config
 	if (folderInfo.kit) {
 		// TODO: set adapter to static
+		// TODO: setdefault ssr to false
+		// TODO: setdefault prerender to false?
+		// TODO: setdefault fallback to index.html?
 
 		// TODO: extract build directory from options
 		distDir = "../build";
