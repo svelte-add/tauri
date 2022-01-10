@@ -1,6 +1,6 @@
 import { tauriBuildScript, tauriDevScript } from "./stuff.js";
 
-/** @type {import("../..").AdderRun<import("./__metadata.js").Options>} */
+/** @type {import("../..").AdderRun<import("./__info.js").Options>} */
 export const run = async ({ folderInfo, install, runCommand, updateJson }) => {
 	const appName = "My Tauri App";
 	const windowTitle = "Tauri App Window";

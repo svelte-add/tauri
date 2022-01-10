@@ -1,5 +1,12 @@
 import { tauriBuildScript, tauriDevScript } from "./stuff.js";
 
+export const name = "(work in progress) Tauri";
+
+/** @typedef {{}} Options */
+
+/** @type {import("../..").AdderOptions<Options>} */
+export const options = {};
+
 /** @type {import("../..").Heuristic[]} */
 export const heuristics = [
 	{
