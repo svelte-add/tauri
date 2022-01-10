@@ -20,4 +20,18 @@ export const heuristics = [
 			return tauriConf.exists;
 		},
 	},
+	{
+		description: "When using SvelteKit, the static adapter is set up",
+		async detector({ readFile }) {
+			const js = await readFile({ path: "/svelte.config.js" });
+
+			if (!js.exists) return false;
+
+			if (js.text.includes("@sveltejs/kit")) {
+				if (!js.text.includes("@sveltejs/adapter-static")) return false;
+			}
+
+			return true;
+		},
+	},
 ];
