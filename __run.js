@@ -54,6 +54,6 @@ export const run = async ({ folderInfo, install, runCommand, updateJson }) => {
 	});
 
 	await install({ package: "npm-run-all" });
-	
+
 	await install({ package: "@tauri-apps/api" });
 };
