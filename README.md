@@ -23,3 +23,7 @@ This adder doesn't take any options of its own.
 After the adder runs,
 
 - WIP
+
+- You can [configure Tauri](https://tauri.studio/en/docs/api/config/) in the `src-tauri/tauri.conf.json` file.
+
+- You can import from [the `"@tauri-apps/api"` package](https://tauri.studio/en/docs/api/js/index) to access the backend.
