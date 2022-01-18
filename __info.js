@@ -2,10 +2,32 @@ import { tauriBuildScript, tauriDevScript } from "./stuff.js";
 
 export const name = "(work in progress) Tauri";
 
-/** @typedef {{}} Options */
+/** @type {import("../..").Gatekeep} */
+export const gatekeep = async ({ runCommand }) => {
+	try {
+		await runCommand({
+			command: ["cargo", "--version"],
+			async interact() {},
+		});
+	} catch (e) {
+		return {
+			advice: "you need to install cargo first https://tauri.studio/docs/get-started/intro#setting-up-your-environment, then install tauri as a cargo subcommand https://tauri.studio/docs/development/integration#alternatively-install-tauri-cli-as-a-cargo-subcommand",
+		};
+	}
 
-/** @type {import("../..").AdderOptions<Options>} */
-export const options = {};
+	try {
+		await runCommand({
+			command: ["cargo", "tauri", "--version"],
+			async interact() {},
+		});
+	} catch (e) {
+		return {
+			advice: "you need to install tauri as a cargo subcommand first https://tauri.studio/docs/development/integration#alternatively-install-tauri-cli-as-a-cargo-subcommand",
+		};
+	}
+
+	return { able: true };
+};
 
 /** @type {import("../..").Heuristic[]} */
 export const heuristics = [
@@ -42,3 +64,8 @@ export const heuristics = [
 		},
 	},
 ];
+
+/** @typedef {{}} Options */
+
+/** @type {import("../..").AdderOptions<Options>} */
+export const options = {};
