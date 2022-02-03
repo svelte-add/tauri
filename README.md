@@ -1,8 +1,8 @@
-<h1 align="center">(WIP) 💫 Add Tauri to Svelte</h1>
+<h1 align="center">💫 Add (work in progress) Tauri to Svelte</h1>
 
 This is an adder for `svelte-add`; you should [read its `README`](https://github.com/svelte-add/svelte-add#readme) before continuing here.
 
-## ➕ Adding Tauri
+## ➕ Adding (work in progress) Tauri
 
 This adder's codename is `tauri`, and can be used like so:
 
@@ -18,11 +18,9 @@ This adder supports SvelteKit and Vite-powered Svelte apps (all the environments
 
 This adder doesn't take any options of its own.
 
-## 🛠 Using Tauri
+## 🛠 Using (work in progress) Tauri
 
 After the adder runs,
-
-- WIP
 
 - You can [configure Tauri](https://tauri.studio/en/docs/api/config/) in the `src-tauri/tauri.conf.json` file.
 

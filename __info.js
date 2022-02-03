@@ -2,6 +2,10 @@ import { tauriBuildScript, tauriDevScript } from "./stuff.js";
 
 export const name = "(work in progress) Tauri";
 
+export const emoji = "💫";
+
+export const usageMarkdown = ["You can [configure Tauri](https://tauri.studio/en/docs/api/config/) in the `src-tauri/tauri.conf.json` file.", 'You can import from [the `"@tauri-apps/api"` package](https://tauri.studio/en/docs/api/js/index) to access the backend.'];
+
 /** @type {import("../..").Gatekeep} */
 export const gatekeep = async ({ runCommand }) => {
 	try {
