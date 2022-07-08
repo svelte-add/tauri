@@ -33,10 +33,6 @@ export const run = async ({ folderInfo, install, runCommand, updateJson }) => {
 
 			let applicationFrameworkDevScript = "vite:dev";
 			let applicationFrameworkBuildScript = "vite:build";
-			if (folderInfo.kit) {
-				applicationFrameworkDevScript = "svelte-kit:dev";
-				applicationFrameworkBuildScript = "svelte-kit:build";
-			}
 
 			const scripts = obj.scripts;
 
