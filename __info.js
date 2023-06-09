@@ -10,6 +10,7 @@ export const usageMarkdown = ["You can [configure Tauri](https://tauri.studio/en
 export const gatekeep = async ({ runCommand }) => {
 	try {
 		await runCommand({
+			cwd: "",
 			command: ["cargo", "--version"],
 			async interact() {},
 		});
@@ -21,6 +22,7 @@ export const gatekeep = async ({ runCommand }) => {
 
 	try {
 		await runCommand({
+			cwd: "",
 			command: ["cargo", "tauri", "--version"],
 			async interact() {},
 		});
